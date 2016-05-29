@@ -1,0 +1,26 @@
+{
+    "name": "virfaure/ohce-kata-php",
+    "description": "Practice outside-in TDD using test doubles with the Ohce Kata.",
+    "version": "1.0.1",
+    "keywords": ["kata", "practice", "coding dojo", "dojo", "ohce"],
+    "require-dev": {
+        "phpunit/phpunit": "~4.0",
+        "mockery/mockery": "0.9.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Virfaure",
+            "email": "virfaure@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "config": {
+        "bin-dir": "bin/"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    }
+}
