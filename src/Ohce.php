@@ -25,7 +25,9 @@ class Ohce
     public function run()
     {
         $this->console->output('¡Buenas días Pedro!');
-        $this->console->read('hola');
-        $this->console->output('aloh');
+
+        $input = $this->console->read('hola');
+        $phrase = new Phrase($input);
+        $this->console->output($phrase->reverse());
     }
 }
