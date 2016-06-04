@@ -24,7 +24,8 @@ class Ohce
 
     public function run()
     {
-        $this->console->output('¡Buenas días Pedro!');
+        $greeting = new GreetingForUser($this->userName);
+        $this->console->output($greeting->greets());
 
         $input = $this->console->read('hola');
         $phrase = new Phrase($input);
